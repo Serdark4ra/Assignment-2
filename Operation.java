@@ -63,12 +63,25 @@ public class Operation{
     }
     public static void findSumOfElements()
     {
-        int sum = 0;
-        for(int i = 0; i < array.length; i++)
+        int sumOfEven = 0;
+        int sumOfOdd = 0;
+        
+        for (int i = 0; i < array.length; i++)
+        {
+            if ( i % 2 == 0)
             {
-                sum += array[i];
+                sumOfEven += array[i];
+                
             }
-        System.out.println( "Sum of the elements is " + sum);
+            else if ( i % 2 == 1)
+            {
+                sumOfOdd += array[i];
+            }        
+        }
+        System.out.println( "Sum of even indexed numbers is " + sumOfEven);
+        System.out.println( "Sum of odd indexed numbers is " + sumOfOdd);
+        
+        
 
     }
 

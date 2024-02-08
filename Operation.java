@@ -57,8 +57,11 @@ public class Operation{
             System.out.println("Max number is: " + max);
         }
     }
-
-    public static void findAverage()
+    /**
+     * finds the average of an array and prints the differences 
+     * between the initial array and the average
+     */
+    public static void findAverage(int[] array)
     {
         int arraySum = 0;
         int[] updatedArray = new int[array.length];
@@ -70,7 +73,7 @@ public class Operation{
         int average = arraySum / array.length;
 
         for (int i = 0; i < array.length; i++){
-            updatedArray[i] = average - array[i];
+            updatedArray[i] = array[i] - average;
         }
 
         System.out.println(Arrays.toString(updatedArray));

@@ -58,7 +58,7 @@ public class Operation{
         }
     }
 
-    public static void findAvarage()
+    public static void findAverage()
     {
         int arraySum = 0;
         int[] updatedArray = int[array.length];
@@ -75,6 +75,7 @@ public class Operation{
 
         System.out.println(Arrays.toString(updatedArray));
     }
+    
     public static void findSumOfElements()
     {
         int sumOfEven = 0;

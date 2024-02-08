@@ -107,7 +107,7 @@ public class Operation{
             System.out.print("{");
             for ( int i = 0; i < array.length; i++)
             {
-                System.out.print(array[i] - average);
+                System.out.print((int)(array[i] - average));
                 if ( i < array.length - 1 )
                 {
                     System.out.print(", ");

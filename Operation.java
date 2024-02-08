@@ -21,7 +21,40 @@ public class Operation{
         }
         
     //Menu will take place in here.
-        
+        scanner.nextLine();
+        int choice;
+        do
+        {
+            System.out.print(
+            "1- Find the the element with minimum value\n" +
+            "2- Find the the element with maximum value\n" +
+            "3- Display how each element of the array differs from the average\n" +
+            "4- Find the sum of elements with odd- and even-numbered indexes\n" +
+            "5- Exi\n" +
+            "Choose the operation that you want: " 
+            );
+            choice = scanner.nextInt();
+            if ( choice == 1)
+            {
+                findMin();
+            }
+            else if ( choice == 2)
+            {
+                findMax();
+            }
+            else if ( choice == 3)
+            {
+                findAverage(array);
+            }
+            else if ( choice == 4)
+            {
+                findSumOfElements();
+            }
+            else if ( choice == 5)
+            {
+                System.out.println("Exitting...");
+            }
+        }while( choice != 5 );
     }
     
     /**

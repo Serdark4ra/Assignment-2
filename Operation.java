@@ -91,7 +91,7 @@ public class Operation{
 
     /**
      * finds the average of an array and prints the differences 
-     * between the initial array and the average
+     * between the initial values of the array and the average
      */
     public static void findAverage()
     { 

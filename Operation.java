@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Operation{
     
@@ -59,7 +60,20 @@ public class Operation{
 
     public static void findAvarage()
     {
+        int arraySum = 0;
+        int[] updatedArray = int[array.length];
 
+        for (int i = 0; i < array.length; i++){
+            arraySum += array[i];
+        }
+
+        int average = arraySum / array.length;
+
+        for (int i = 0; i < array.length; i++){
+            updatedArray[i] = average - array[i];
+        }
+
+        System.out.println(Arrays.toString(updatedArray));
     }
     public static void findSumOfElements()
     {

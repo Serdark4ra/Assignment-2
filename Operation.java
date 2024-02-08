@@ -44,7 +44,7 @@ public class Operation{
             }
             else if ( choice == 3)
             {
-                findAverage(array);
+                findAverage();
             }
             else if ( choice == 4)
             {
@@ -93,51 +93,6 @@ public class Operation{
      * finds the average of an array and prints the differences 
      * between the initial array and the average
      */
-    public static void findAverage(int[] array)
-    {
-        int arraySum = 0;
-        int[] updatedArray = new int[array.length];
-
-        for (int i = 0; i < array.length; i++){
-            arraySum += array[i];
-        }
-
-        int average = arraySum / array.length;
-
-        for (int i = 0; i < array.length; i++){
-            updatedArray[i] = array[i] - average;
-        }
-
-        System.out.println(Arrays.toString(updatedArray));
-    }
-    
-    public static void findSumOfElements()
-    {
-        int sumOfEven = 0;
-        int sumOfOdd = 0;
-        
-        for (int i = 0; i < array.length; i++)
-        {
-            if ( i % 2 == 0)
-            {
-                sumOfEven += array[i];
-                
-            }
-            else if ( i % 2 == 1)
-            {
-                sumOfOdd += array[i];
-            }        
-        }
-        System.out.println( "Sum of even indexed numbers is " + sumOfEven);
-        System.out.println( "Sum of odd indexed numbers is " + sumOfOdd);
-        
-        
-
-    }
-
-}
-
-    /*
     public static void findAverage()
     { 
         int sum = 0;
@@ -165,4 +120,55 @@ public class Operation{
         {
             System.out.println("The array s empty.");
         }
-    }*/
+    }
+
+    
+    
+    public static void findSumOfElements()
+    {
+        int sumOfEven = 0;
+        int sumOfOdd = 0;
+        
+        for (int i = 0; i < array.length; i++)
+        {
+            if ( i % 2 == 0)
+            {
+                sumOfEven += array[i];
+                
+            }
+            else if ( i % 2 == 1)
+            {
+                sumOfOdd += array[i];
+            }        
+        }
+        System.out.println( "Sum of even indexed numbers is " + sumOfEven);
+        System.out.println( "Sum of odd indexed numbers is " + sumOfOdd);
+        
+        
+
+    }
+
+}
+
+    
+    
+
+    /*
+     * public static void findAverage(int[] array)
+    {
+        int arraySum = 0;
+        int[] updatedArray = new int[array.length];
+
+        for (int i = 0; i < array.length; i++){
+            arraySum += array[i];
+        }
+
+        int average = arraySum / array.length;
+
+        for (int i = 0; i < array.length; i++){
+            updatedArray[i] = array[i] - average;
+        }
+
+        System.out.println(Arrays.toString(updatedArray));
+    }
+     */

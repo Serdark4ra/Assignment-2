@@ -19,7 +19,7 @@ public class Operation{
             array[i] = rand.nextInt(101);
         }
         
-
+    //Menu will take place in here.
         
     }
     

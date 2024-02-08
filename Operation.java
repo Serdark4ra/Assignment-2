@@ -59,7 +59,30 @@ public class Operation{
 
     public static void findAvarage()
     {
-
+        int sum = 0;
+        double average;
+        for ( int i = 0; i < array.length; i++)
+        {
+            sum = sum + array[i];
+        }
+        if ( array.length != 0)
+        {
+            average = sum / array.length; 
+            System.out.print("{");
+            for ( int i = 0; i < array.length; i++)
+            {
+                System.out.print(array[i] - average);
+                if ( i < array.length - 1 )
+                {
+                    System.out.print(", ");
+                } 
+            }
+            System.out.println("}");
+        }
+        else
+        {
+            System.out.println("The array s empty.");
+        }
     }
     public static void findSumOfElements()
     {

@@ -61,7 +61,7 @@ public class Operation{
     public static void findAverage()
     {
         int arraySum = 0;
-        int[] updatedArray = int[array.length];
+        int[] updatedArray = new int[array.length];
 
         for (int i = 0; i < array.length; i++){
             arraySum += array[i];

@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Operation{
     
@@ -57,8 +58,8 @@ public class Operation{
         }
     }
 
-    public static void findAvarage()
-    {
+    public static void findAverage()
+    {/* 
         int sum = 0;
         double average;
         for ( int i = 0; i < array.length; i++)
@@ -82,8 +83,9 @@ public class Operation{
         else
         {
             System.out.println("The array s empty.");
-        }
+        }*/
     }
+    
     public static void findSumOfElements()
     {
         int sumOfEven = 0;

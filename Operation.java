@@ -11,7 +11,7 @@ public class Operation{
     public static void main(String[] args) {
         scanner = new Scanner(System.in);
         rand = new Random();
-        System.out.println("Enter array size: ");
+        System.out.print("Enter array size: ");
         int number = scanner.nextInt();
 
         array = new int[number];
@@ -30,7 +30,7 @@ public class Operation{
             "2- Find the the element with maximum value\n" +
             "3- Display how each element of the array differs from the average\n" +
             "4- Find the sum of elements with odd- and even-numbered indexes\n" +
-            "5- Exi\n" +
+            "5- Exit\n" +
             "Choose the operation that you want: " 
             );
             choice = scanner.nextInt();
@@ -69,9 +69,8 @@ public class Operation{
             {
                 min = array[i];
             }
-
-            System.out.println("Min number is: " + min);
         }
+        System.out.println("Min number is: " + min);
     }
     
     /**
@@ -86,9 +85,8 @@ public class Operation{
             {
                 max = array[i];
             }
-
-            System.out.println("Max number is: " + max);
         }
+        System.out.println("Max number is: " + max);
     }
 
     /**

@@ -58,32 +58,26 @@ public class Operation{
         }
     }
 
-    public static void findAverage()
-    {/* 
-        int sum = 0;
-        double average;
-        for ( int i = 0; i < array.length; i++)
-        {
-            sum = sum + array[i];
+    /**
+     * finds the average of an array and prints the differences 
+     * between the initial array and the average
+     */
+    public static void findAverage(int[] array)
+    {
+        int arraySum = 0;
+        int[] updatedArray = new int[array.length];
+
+        for (int i = 0; i < array.length; i++){
+            arraySum += array[i];
         }
-        if ( array.length != 0)
-        {
-            average = sum / array.length; 
-            System.out.print("{");
-            for ( int i = 0; i < array.length; i++)
-            {
-                System.out.print(array[i] - average);
-                if ( i < array.length - 1 )
-                {
-                    System.out.print(", ");
-                } 
-            }
-            System.out.println("}");
+
+        int average = arraySum / array.length;
+
+        for (int i = 0; i < array.length; i++){
+            updatedArray[i] = array[i] - average;
         }
-        else
-        {
-            System.out.println("The array s empty.");
-        }*/
+
+        System.out.println(Arrays.toString(updatedArray));
     }
     
     public static void findSumOfElements()
